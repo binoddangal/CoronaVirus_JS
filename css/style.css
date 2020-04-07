@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #eae7d9;
+}
+.DataTbl {
+    border-collapse: collapse;
+    width: 100%;
+}
+  
+.DataTbl td, #DataTbl th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.DataTbl tr:nth-child(even){background-color: #faf4ff;}
+  
+.DataTbl tr:hover {background-color: #ddd;}
+  
+.DataTbl th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #231903;
+    color: white;
+}
+
+.search-box{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    margin-left: 250px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 16px 16px 16px;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+}
+ 
+  .search-box:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.news-box{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 16px 16px 16px;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+}
+ 
+  .news-box:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.faq-box{
+    width: 100%;
+    max-width: 280px;
+    padding: 10px 15px;
+    float: right;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 16px 16px 16px 16px;
+    
+    color: #313131;
+    font-size: 20px;
+    font-weight: 300;
+}
+ 
+  .faq-box:hover{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+A {
+    text-decoration: none;
+    color: black;
+} 
