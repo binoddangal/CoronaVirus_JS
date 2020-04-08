@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CoronaVirus (COVID-19)</title>
+    <link rel="shortcut icon" href="image/corona.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <ul>
+        <img src="image/corona.png" style="    margin: 5px;
+        margin-left: 50px;
+        height: 55px;
+        width: 55px;">
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="#world">World Statistics</a></li>
+        <li><a class="active" href="index.html">Home</a></li>
+      </ul>
+    <h1 style="text-align: center;">Corona Virus (COVID-19) Update</h1>
+    <input type="text" autocomplete="off" id="gfg" class="search-box" placeholder="Search for a Country..." />
+    <br><br>
+    <div class="container">
+        <table class="DataTbl">
+            <thread>
+                <tr>
+                    <th style="text-align: center;">Country</th>
+                    <th style="text-align: center;">Total Cases</th>
+                    <th style="text-align: center;">New Cases</th>
+                    <th style="text-align: center;">Total Death</th>
+                    <th style="text-align: center;">New Death</th>
+                    <th style="text-align: center;">Active Cases</th>
+                    <th style="text-align: center;">Recovered</th>
+                    <th style="text-align: center;">Critical Cases</th>
+                </tr>
+            </thread>
+            <tbody style="text-align: center;" id="coranavirus"></tbody>
+        </table>
+    </div>
+    <script src="js/world.js"></script>
+</body>
+
+</html>

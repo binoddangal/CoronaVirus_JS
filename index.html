@@ -1,37 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <title>CoronaVirus (COVID-19)</title>
+    <title>COVID Tracker</title>
+
     <link rel="shortcut icon" href="image/corona.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/home.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
 </head>
 
 <body>
-    <h1 style="text-align: center;">Corona Virus (COVID-19) Update</h1>
-    <button type="submit" class="news-box"><a href="news.html">Some News of Nepal</button></a>
-    <button type="submit" class="faq-box"><a href="faq.html">FAQ in Nepali And English</button></a>
-    <input type="text" autocomplete="off" id="gfg" class="search-box" placeholder="Search for a Country..." />
-    <br><br>
-    <div class="container">
-        <table class="DataTbl">
-            <thread>
-                <tr>
-                    <th style="text-align: center;">Country</th>
-                    <th style="text-align: center;">Total Cases</th>
-                    <th style="text-align: center;">New Cases</th>
-                    <th style="text-align: center;">Total Death</th>
-                    <th style="text-align: center;">New Death</th>
-                    <th style="text-align: center;">Active Cases</th>
-                    <th style="text-align: center;">Recovered</th>
-                    <th style="text-align: center;">Critical Cases</th>
-                </tr>
-            </thread>
-            <tbody style="text-align: center;" id="coranavirus"></tbody>
-        </table>
+    <ul>
+        <img src="image/corona.png" style="margin: 5px;
+        margin-left: 50px;
+        height: 55px;
+        width: 55px;">
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="news.html">News</a></li>
+        <li><a href="world.html">World Statistics</a></li>
+        <li><a class="active" href="#home">Home</a></li>
+    </ul>
+
+    <h2 class="subtitle">The latest statistics regarding the "Corona Virus" Nepal.</h2>
+    <div class="data-container">
+        <div class="stats-container">
+            <h4>Tested Positive</h4>
+            <h1 id="tested_positive"></h1>
+            <h4>Tested Negative</h4>
+            <h1 id="tested_negative"></h1>
+            <h4>In Isolated</h4>
+            <h1 id="in_isolation"></h1>
+            <h4>Pending Result</h4>
+            <h1 id="pending_result"></h1>
+            <h4>Deaths</h4>
+            <h1 id="deaths"></h1>
+        </div>
+        <div class="location-container">
+            <h4>Country</h4>
+            <h1 id="country">Nepal</h1>
+            <h4>Total Cases Tested</h4>
+            <h1 id="tested_total"></h1>
+            <h4>Total Recovered</h4>
+            <h1 id="recovered"></h1>
+            <h4>Last Updated</h4>
+            <h1 id="updated_at"></h1>
+            <h4>% of Deaths</h4>
+            <h1 id="percent"></h1>
+        </div>
     </div>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

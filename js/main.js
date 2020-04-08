@@ -1,33 +1,29 @@
-let coviddata = '';
+window.onload = function() {
+	getCovidStats();
+}
 
-fetch('https://nepalcorona.info/api/v1/data/world')
-    .then(response => {
-        return response.json()
-    })
-    .then(covid => {
-        //    console.log(covid);
+function getCovidStats() {
+	fetch('https://nepalcorona.info/api/v1/data/nepal')
+		.then(function (resp) { return resp.json() })
+		.then(function (data) {
+			console.log('data');
+			let tested_positive = data.tested_positive;
+			let tested_negative = data.tested_negative;
+			let tested_total = data.tested_total;
+			let in_isolation = data.in_isolation;
+			let pending_result = data.pending_result;
+			let recovered = data.recovered;
+			let deaths = data.deaths;
+			let updated_at = data.updated_at;
 
-
-        covid.forEach(data => {
-
-            coviddata += "<tr><td>" + data.country + "</td>";
-            coviddata += "<td>" + data.totalCases + "</td>";
-            coviddata += "<td>" + data.newCases + "</td>";
-            coviddata += "<td>" + data.totalDeaths + "</td>";
-            coviddata += "<td>" + data.newDeaths + "</td>";
-            coviddata += "<td>" + data.activeCases + "</td>";
-            coviddata += "<td>" + data.totalRecovered + "</td>";
-            coviddata += "<td>" + data.criticalCases + "</td></tr>";
-            // console.log(coviddata);
-            document.getElementById('coranavirus').innerHTML = coviddata;
-        })
-        $(document).ready(function() { 
-            $("#gfg").on("keyup", function() { 
-                var value = $(this).val().toLowerCase(); 
-                $("#coranavirus tr").filter(function() { 
-                    $(this).toggle($(this).text() 
-                    .toLowerCase().indexOf(value) > -1) 
-                }); 
-            }); 
-        });
-    })
+			document.getElementById('tested_positive').innerHTML = tested_positive.toLocaleString('en');
+			document.getElementById('tested_negative').innerHTML = tested_negative.toLocaleString('en');
+			document.getElementById('tested_total').innerHTML = tested_total.toLocaleString('en');
+			document.getElementById('in_isolation').innerHTML = in_isolation.toLocaleString('en');
+			document.getElementById('pending_result').innerHTML = pending_result.toLocaleString('en');
+			document.getElementById('recovered').innerHTML = recovered.toLocaleString('en');
+			document.getElementById('deaths').innerHTML = deaths.toLocaleString('en');
+			document.getElementById('updated_at').innerHTML = updated_at.substr(0, 10);
+			document.getElementById('percent').innerHTML = ((Number(deaths) / Number(tested_positive)) * 100).toLocaleString("en", { minimumFractionDigits: 2, maximumFractionDigits: 2 }) + "%";
+		})
+}
