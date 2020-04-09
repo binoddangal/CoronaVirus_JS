@@ -38,7 +38,7 @@ fetch('https://nepalcorona.info/api/v1/news')
 
             //Display date
             var date = document.createElement('p')
-            date.innerHTML = ' Created Time: '+ articles[i].created_at +' || Update Time: '+ articles[i].updated_at;
+            date.innerHTML = 'News Created Time: '+ articles[i].created_at.substr(0, 10);
 
 
             //Merge usersData
