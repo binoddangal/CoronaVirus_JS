@@ -1,87 +1,100 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-body{
-    font-family: 'Roboto', sans-serif;
-    background-color: #eae7d9;
-    margin: 0;
-    padding: 0;
+body {
+	font-family: 'Roboto', sans-serif;
+	background-color: #eae7d9;
+	margin: 0;
+	padding: 0;
 }
 
-ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #231903;
+.nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #231903;
+}
+
+ul {
+	float: right;
 }
 
 li {
-    float: right;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 20px 22px;
-    text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #333;
-  }
-  
-  .company-title{
-    color: white;
-    float: left;
-    font-size: 20px;
-  }
+	display: inline-block;
+}
 
+li a {
+	/* display: block; */
+	color: white;
+	/* text-align: center; */
+	padding: 30px 22px;
+	text-decoration: none;
+}
 
+li a:hover {
+	background-color: #333;
+}
+
+.company-title {
+	display: inline-block;
+}
+.company-title img {
+	float: left;
+}
+.company-title h5 {
+	float: right;
+	color: white;
+	/* font-size: 20px; */
+}
 .DataTbl {
-    border-collapse: collapse;
-    width: 99%;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-  
-.DataTbl td, #DataTbl th {
-    border: 1px solid #ddd;
-    padding: 8px;
+	border-collapse: collapse;
+	width: 99%;
+	margin-left: 5px;
+	margin-right: 5px;
 }
 
-.DataTbl tr:nth-child(even){background-color: #faf4ff;}
-  
-.DataTbl tr:hover {background-color: #ddd;}
-  
+.DataTbl td,
+#DataTbl th {
+	border: 1px solid #ddd;
+	padding: 8px;
+}
+
+.DataTbl tr:nth-child(even) {
+	background-color: #faf4ff;
+}
+
+.DataTbl tr:hover {
+	background-color: #ddd;
+}
+
 .DataTbl th {
-    padding-top: 12px;
-    padding-bottom: 12px;
-    text-align: left;
-    background-color: #231903;
-    color: white;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #231903;
+	color: white;
 }
 
-.search-box{
-    width: 100%;
-    max-width: 280px;
-    padding: 10px 15px;
-    margin-left: 5px;
-    border: none;
-    outline: none;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 16px 16px 16px 16px;
-    
-    color: #313131;
-    font-size: 20px;
-    font-weight: 300;
+.search-box {
+	width: 100%;
+	max-width: 280px;
+	padding: 10px 15px;
+	margin-left: 5px;
+	border: none;
+	outline: none;
+	background-color: rgba(255, 255, 255, 0.3);
+	border-radius: 16px 16px 16px 16px;
+
+	color: #313131;
+	font-size: 20px;
+	font-weight: 300;
 }
- 
-  .search-box:hover{
-    background-color: rgba(255, 255, 255, 0.6);
+
+.search-box:hover {
+	background-color: rgba(255, 255, 255, 0.6);
 }
 
 A {
-    text-decoration: none;
-    color: black;
-} 
+	text-decoration: none;
+	color: black;
+}
