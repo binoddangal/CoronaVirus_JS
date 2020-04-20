@@ -98,3 +98,13 @@ A {
 	text-decoration: none;
 	color: black;
 }
+.footer{
+	/* height: 20px; */
+	background-color: black;
+}
+p{
+	color: white;
+	text-align: center;
+	font-weight: bold;
+	letter-spacing: 3px;
+}
