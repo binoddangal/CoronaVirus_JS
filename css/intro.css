@@ -1,18 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
 
 body {
-	font-family: 'Roboto', sans-serif;
-    background-color: #eae7d9;
+  font-family: "Roboto", sans-serif;
+  background-color: #eae7d9;
 }
 
-h1{
-    text-align: center;
+h1 {
+  text-align: center;
 }
-img{
-    margin-left: 20%;
+.img {
+  text-align: center;
 }
-p{
-    margin-right: 80px;
-    margin-left: 80px;
-    /* text-align: center; */
+p {
+  margin-right: 80px;
+  margin-left: 80px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.video {
+  /* margin-right: 80px;
+  margin-left: 80px; */
+  max-height: 600px;
+  max-width: 100%;
+  /* width: 80%; */
+  text-align: center;
 }
