@@ -24,6 +24,7 @@ function getCovidStats() {
 			document.getElementById('recovered').innerHTML = recovered.toLocaleString('en');
 			document.getElementById('deaths').innerHTML = deaths.toLocaleString('en');
 			document.getElementById('updated_at').innerHTML = updated_at.substr(0, 10);
-			document.getElementById('percent').innerHTML = tested_positive - deaths - recovered;
+			// document.getElementById('percent').innerHTML = tested_positive - deaths - recovered;
+			document.getElementById('percent').innerHTML = ((Number(deaths)/Number(tested_positive))*100).toLocaleString("en", {minimumFractionDigits: 2, maximumFractionDigits: 2}) + "%";
 		})
 }
